@@ -1,15 +1,12 @@
 package com.android.mymusicapp;
 
-import android.content.ClipData.Item;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.util.Property;
 import android.view.View;
-import android.widget.Adapter;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -42,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     // Attaching the adapter to the list view.
     listView.setAdapter(songAdapter);
 
-    // setting on Item click listner to open the PlaySong Activity and send the song data to it.
+    // setting on Item click listner to open the PlaySongActivity Activity and send the song data to it.
     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -50,12 +47,21 @@ public class MainActivity extends AppCompatActivity {
         TextView songArtist = view.findViewById(R.id.song_artist);
         TextView songDuaration = view.findViewById(R.id.song_duration);
         ImageView songImage = view.findViewById(R.id.song_image);
-        Intent intent = new Intent(MainActivity.this, PlaySong.class);
+        Intent intent = new Intent(MainActivity.this, PlaySongActivity.class);
         intent.putExtra("songname", songName.getText().toString());
         intent.putExtra("artistname", songArtist.getText().toString());
         intent.putExtra("songduration", songDuaration.getText().toString());
         intent.putExtra("songimage", R.id.song_image);
         startActivity(intent);
+      }
+    });
+
+    Button goToNowPlayingButton = (Button) findViewById(R.id.goto_now_play_song_btn);
+    goToNowPlayingButton.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent i = new Intent(MainActivity.this, PlaySongActivity.class);
+        startActivity(i);
       }
     });
 

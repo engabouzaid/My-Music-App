@@ -5,7 +5,12 @@ public class Song {
   /**
    * Declaring song variables
    */
-  private String songName, songArtist, songAlbum, songPlayList, songCategory, songDuration;
+  private String songName;
+  private String songArtist;
+  private String songAlbum;
+  private String songPlayList;
+  private String songCategory;
+  private String songDuration;
 
   /**
    * Create a new Song object "Constructor".

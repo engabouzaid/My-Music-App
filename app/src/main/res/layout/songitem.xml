@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:padding="6dp"
-  >
+  android:padding="6dp">
 
   <ImageView
     android:id="@+id/song_image"
@@ -12,8 +11,7 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_centerInParent="true"
-    android:src="@drawable/song64"
-    />
+    android:src="@drawable/song64"/>
   <ImageView
     android:id="@+id/play_btn"
     android:layout_width="wrap_content"
@@ -21,8 +19,7 @@
     android:layout_alignParentEnd="true"
     android:layout_alignParentRight="true"
     android:layout_centerInParent="true"
-    android:src="@drawable/playbutton32"
-    />
+    android:src="@drawable/ic_action_playback_play"/>
 
   <TextView
     android:id="@+id/song_name"
@@ -58,7 +55,6 @@
     android:layout_below="@+id/song_artist"
     android:layout_toEndOf="@+id/song_image"
     android:layout_toRightOf="@+id/song_image"
-    android:hint="song durration"
-    />
+    android:hint="song durration"/>
 
 </RelativeLayout>

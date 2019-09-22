@@ -1,7 +1,6 @@
 package com.android.mymusicapp;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PlaySong extends AppCompatActivity {
+public class PlaySongActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class PlaySong extends AppCompatActivity {
     playPauseBTN.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Toast.makeText(PlaySong.this, "Playing", Toast.LENGTH_SHORT).show();
+        Toast.makeText(PlaySongActivity.this, "Playing", Toast.LENGTH_SHORT).show();
       }
     });
 
@@ -49,7 +48,7 @@ public class PlaySong extends AppCompatActivity {
     playNextBTN.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Toast.makeText(PlaySong.this, "Play Next", Toast.LENGTH_SHORT).show();
+        Toast.makeText(PlaySongActivity.this, "Play Next", Toast.LENGTH_SHORT).show();
       }
     });
 
@@ -58,7 +57,7 @@ public class PlaySong extends AppCompatActivity {
     playPreviousBTN.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Toast.makeText(PlaySong.this, "Play Previous", Toast.LENGTH_SHORT).show();
+        Toast.makeText(PlaySongActivity.this, "Play Previous", Toast.LENGTH_SHORT).show();
       }
     });
 
