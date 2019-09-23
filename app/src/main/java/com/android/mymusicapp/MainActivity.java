@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     songs.add(new Song("Your Voice", "Mohammed Moneir", "Your Voice", "Romance", "Rock", "4:20"));
     songs.add(new Song("Yak", "Ahsen Almaz", "Yak", "Romance", "Jazz", "5:10"));
     songs.add(new Song("Bamboo", "Shakira", "Bamboo", "Dance", "Jazz", "3:44"));
-    songs.add(new Song("Hardest Word", "Moein Sherif", "Hardest Word", "Romance", "Rock", "5:00"));
+      songs.add(new Song("Hardest Word", "Moein Sherif", "Hardest Word", "Romance", "Rock", "5:00"));
 
     // getting the song adapter.
     final SongAdapter songAdapter = new SongAdapter(this, songs);

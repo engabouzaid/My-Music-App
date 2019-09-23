@@ -11,7 +11,7 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_centerInParent="true"
-    android:src="@drawable/song64"/>
+    android:src="@drawable/ic_song512"/>
   <ImageView
     android:id="@+id/play_btn"
     android:layout_width="wrap_content"

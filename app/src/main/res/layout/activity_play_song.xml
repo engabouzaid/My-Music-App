@@ -15,7 +15,7 @@
     android:layout_margin="20dp"
     android:layout_marginTop="40dp"
     android:layout_centerHorizontal="true"
-    android:src="@drawable/song64"/>
+    android:src="@drawable/ic_song512"/>
 
   <TextView
     android:id="@+id/songname"
